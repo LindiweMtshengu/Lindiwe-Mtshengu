@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindiwe Mtshengu - Contact</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f0; /* beige */
+            color: #1a1a1a; /* black */
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #046c4e; /* emerald green */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 10px 0;
+            border-bottom: 2px solid #046c4e;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #046c4e;
+            font-size: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px 0;
+            display: grid;
+            grid-template-areas:
+                "intro"
+                "sections"
+                "exploits";
+            grid-template-rows: auto auto 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .intro {
+            grid-area: intro;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+
+        .sections {
+            grid-area: sections;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        .section {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #046c4e;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: #046c4e;
+            font-weight: 500;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        .personal-exploits {
+            grid-area: exploits;
+            text-align: left;
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 0;
+        }
+
+        .personal-exploits h3 {
+            font-size: 28px;
+            color: #046c4e;
+            margin-bottom: 10px;
+        }
+
+        .personal-exploits p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-areas:
+                    "intro"
+                    "sections"
+                    "exploits";
+                grid-template-rows: auto auto auto;
+                padding: 20px;
+            }
+            .sections {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #e1ebe5;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lindiwe Mtshengu</h1>
+        <p><b>Tech Professional | Explorative Writer</b></p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Writing Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="intro">
+            <h2>Contact Overview</h2>
+            <p>Get in touch with me to discuss collaborations, speaking opportunities, or inquiries about my tech and writing journey. I’m excited to connect and explore new possibilities!</p>
+        </div>
+        <div class="sections">
+            <div class="section">
+                <h2>Email</h2>
+                <p>your.email@example.com</p>
+                <a href="mailto:your.email@example.com">Send Message</a>
+            </div>
+            <div class="section">
+                <h2>LinkedIn</h2>
+                <p>Connect with me professionally.</p>
+                <a href="[your LinkedIn URL]">Visit Profile</a>
+            </div>
+            <div class="section">
+                <h2>Twitter</h2>
+                <p>Follow my updates and thoughts.</p>
+                <a href="https://twitter.com/[yourhandle]">Follow Me</a>
+            </div>
+            <div class="section">
+                <h2>Availability</h2>
+                <p>Check my open hours for meetings.</p>
+                <a href="#">View Schedule</a>
+            </div>
+        </div>
+        <div class="personal-exploits">
+            <h3>CONTACT PREFERENCES | How I Stay Connected</h3>
+            <p>I value meaningful communication and prefer to engage through channels that suit both parties. Email is my primary mode for detailed discussions, where I can respond with thoughtful insights, often within 48 hours. For quick updates or casual chats, Twitter DMs work best, though I moderate my time there due to a busy schedule. LinkedIn is ideal for professional networking—feel free to send a connection request with a note about your interest.</p>
+            <p>I schedule meetings via a shared calendar link (available upon request), preferring video calls for in-depth collaborations. My availability aligns with South African time zones, typically mornings or late afternoons. I aim to reply promptly but appreciate patience as I balance tech projects and writing. If urgent, a follow-up message is welcome.</p>
+            <p>Privacy is important to me. I share only necessary details and encourage secure communication. For large projects, I might suggest a preliminary call to outline goals. This approach ensures clarity and fosters productive exchanges, reflecting my dual roles as a tech professional and writer.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Lindiwe Mtshengu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

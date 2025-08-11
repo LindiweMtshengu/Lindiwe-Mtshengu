@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindiwe Mtshengu - Tech & Writer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f0; /* beige */
+            color: #1a1a1a; /* black */
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #046c4e; /* emerald green */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 10px 0;
+            border-bottom: 2px solid #046c4e;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #046c4e;
+            font-size: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px 20px;
+            display: grid;
+            grid-template-areas:
+                "intro"
+                "sections"
+                "exploits";
+            grid-template-rows: auto auto 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .intro {
+            grid-area: intro;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .sections {
+            grid-area: sections;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .section {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #046c4e;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: #046c4e;
+            font-weight: 500;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        .personal-exploits {
+            grid-area: exploits;
+            text-align: left;
+            width: 100%; /* Stretched to full width of .content */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .personal-exploits h3 {
+            font-size: 28px;
+            color: #046c4e;
+            margin-bottom: 10px;
+        }
+
+        .personal-exploits p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-areas:
+                    "intro"
+                    "sections"
+                    "exploits";
+                grid-template-rows: auto auto auto;
+            }
+            .sections {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #225037;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lindiwe Mtshengu</h1>
+        <p><b>Tech Professional | Explorative Writer</b></p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Writing Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="intro">
+            <h2>Welcome!</h2>
+            <p>Explore my journey as a South African black woman in tech, alongside my personal exploits in art and writing. From a potential-filled and determined student to a courageous young adult in SAs corporate world - the possibilities are endless.<br>So, walk this journey with me.</p>
+        </div>
+        <div class="sections">
+            <div class="section">
+                <h2>Background</h2>
+                <p>Learn about my roots and personal journey.</p>
+                <a href="background.html">Explore</a>
+            </div>
+            <div class="section">
+                <h2>Academics</h2>
+                <p>Discover my educational achievements.</p>
+                <a href="academics.html">Explore</a>
+            </div>
+            <div class="section">
+                <h2>South African Corporate</h2>
+                <p>Insight into my corporate experience.</p>
+                <a href="corporate.html">Explore</a>
+            </div>
+            <div class="section">
+                <h2>Tech</h2>
+                <p>Dive into my tech career and projects.</p>
+                <a href="tech.html">Explore</a>
+            </div>
+        </div>
+        <div class="personal-exploits">
+            <h3>PERSONAL EXPLOITS | What grounds me?</h3>
+            <p>In the whirlwind of a tech career, where algorithms and code dictate the rhythm of my days, I find solace in the simple, grounding forces that remind me of my humanity. As a South African black woman navigating the corporate world, my personal exploits are not just hobbies; they are lifelines that anchor me amidst the chaos. Writing, for instance, is my sanctuary. In my free time, I weave words into stories that explore the intersections of technology and culture, drawing from my own experiences of breaking barriers in a male-dominated field. These narratives are not mere escapism; they are reflections of resilience, capturing the essence of what it means to thrive against odds.</p>
+            <p>Art, too, plays a pivotal role in grounding me. Whether it's sketching digital designs or painting vibrant canvases inspired by African motifs, creating visual art allows me to express emotions that code cannot capture. It's a meditative practice, a way to reconnect with my roots and celebrate the beauty of diversity. My weekends often involve community workshops, where I share my skills with young girls aspiring to enter tech, fostering a sense of purpose that extends beyond my professional achievements.</p>
+            <p>Physical activity is another cornerstone. Running through the streets of Johannesburg at dawn, I feel the pulse of the city mirroring my own heartbeat. It's a reminder of endurance, much like the persistence required in debugging complex software. Yoga sessions in the evening help me unwind, balancing the mental strain of corporate demands with mindfulness. These exploits are not distractions; they are essential for maintaining equilibrium.</p>
+            <p>Family and cultural traditions also ground me profoundly. Gathering with loved ones for traditional meals or storytelling sessions revives the oral histories that shaped my identity. These moments reaffirm my values, reminding me that success in tech is not just about innovation but about uplifting my community. In essence, what grounds me is the harmonious blend of creativity, physical vitality, and cultural connection—elements that fuel my journey as a tech professional and explorative writer.</p>
+            <p>Through these exploits, I not only recharge but also inspire others. My blog features articles on balancing career and creativity, encouraging women in tech to embrace their multifaceted selves. As I continue to explore, I discover that grounding is not about standing still but about finding stability in motion, much like the ever-evolving world of technology.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Lindiwe Mtshengu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

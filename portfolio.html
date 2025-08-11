@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindiwe Mtshengu - Writing Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f0; /* beige */
+            color: #1a1a1a; /* black */
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #046c4e; /* emerald green */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 10px 0;
+            border-bottom: 2px solid #046c4e;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #046c4e;
+            font-size: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px 0;
+            display: grid;
+            grid-template-areas:
+                "intro"
+                "sections"
+                "exploits";
+            grid-template-rows: auto auto 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .intro {
+            grid-area: intro;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+
+        .sections {
+            grid-area: sections;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        .section {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #046c4e;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: #046c4e;
+            font-weight: 500;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        .personal-exploits {
+            grid-area: exploits;
+            text-align: left;
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 0;
+        }
+
+        .personal-exploits h3 {
+            font-size: 28px;
+            color: #046c4e;
+            margin-bottom: 10px;
+        }
+
+        .personal-exploits p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-areas:
+                    "intro"
+                    "sections"
+                    "exploits";
+                grid-template-rows: auto auto auto;
+                padding: 20px;
+            }
+            .sections {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #dae9e1;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lindiwe Mtshengu</h1>
+        <p><b>Tech Professional | Explorative Writer</b></p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Writing Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="intro">
+            <h2>Writing Portfolio Overview</h2>
+            <p>Welcome to my writing portfolio, where I showcase my explorative narratives blending technology, culture, and personal growth. Explore a selection of my work below, with more samples coming soon. Contact me for full access to my creative archive.</p>
+        </div>
+        <div class="sections">
+            <div class="section">
+                <h2>Tech Dreams</h2>
+                <p>A 2025 story about innovation and dreams.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="section">
+                <h2>Women in Tech</h2>
+                <p>A 2025 blog on empowering women in technology.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="section">
+                <h2>Code & Creativity</h2>
+                <p>A poem merging coding and artistic expression.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="section">
+                <h2>Upcoming Work</h2>
+                <p>Stay tuned for new pieces in development.</p>
+                <a href="#">Check Back</a>
+            </div>
+        </div>
+        <div class="personal-exploits">
+            <h3>WRITING PROCESS | My Creative Journey</h3>
+            <p>My writing process is a dance between discipline and inspiration. As a tech professional, I often start with late-night coding sessions that spark ideas, which I then translate into prose or poetry. I draw heavily from my South African roots, infusing stories with the rhythms of Johannesburg and the resilience of my community. Drafting happens in bursts—sometimes on my laptop during a quiet weekend, other times in a notebook during a coffee break. Editing is meticulous, where I refine each word to mirror the precision I apply to code.</p>
+            <p>Inspiration strikes in unexpected places. A conversation with a colleague about AI ethics might evolve into a short story, while a walk through a local market could inspire a poem. I often collaborate with other writers and artists, hosting virtual workshops to exchange ideas. This process not only hones my craft but also connects me to a broader creative network, enriching my narratives with diverse perspectives.</p>
+            <p>Challenges are part of the journey. Balancing a demanding tech career with writing requires sacrifice—early mornings or late nights are common. Yet, the reward is in seeing my work resonate with readers, especially women in tech who see themselves in my stories. I use tools like Scrivener for organization and Grammarly for polish, but the heart of my writing remains raw and personal.</p>
+            <p>Looking ahead, I plan to publish a collection of essays on technology’s cultural impact, blending my dual passions. This portfolio is a living document, growing with each piece I craft, reflecting my evolution as both a writer and a tech innovator.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Lindiwe Mtshengu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
